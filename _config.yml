@@ -1,2 +1,5 @@
 name: Dotnet Mentor
+repository: dotnetmentor/dotnetmentor.github.io
 markdown: kramdown
+gems: ['jekyll-github-metadata']
+host: 0.0.0.0

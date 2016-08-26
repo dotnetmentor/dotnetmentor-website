@@ -1,0 +1,171 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* Main */
+html{
+    font-size: 62.5%;
+    line-height: 1.4;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-weight: 400;
+    color: rgba(0,0,0,0.7);
+}
+
+html > *{
+    font-size: 1.6rem;
+    font-weight: 400;
+    letter-spacing: 0.010em;
+    line-height: 1.8em;
+}
+
+/* Layouting */
+.layout-row {
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 860px) {
+    .layout-row {
+        flex-direction: column;
+    }
+}
+
+.layout-column {
+    display: flex;
+    flex-direction: column;
+}
+.flex {
+    flex: 1;
+}
+
+/* Header */
+.main-header{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0,0,0,0.7);
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.logo{
+    line-height: 1;
+}
+
+/* Typings */
+h1{
+    font-size: 4.6rem;
+    font-weight: 700;
+    /*text-transform: uppercase;*/
+    font-family: 'Roboto Slab', serif;
+    color: rgba(0,0,0,0.87);
+    line-height: 6.5rem;
+}
+h2{
+    font-size: 1.8rem;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+h3{
+    border-bottom: 2px solid #00FF00;
+    text-transform: uppercase;
+}
+h4{
+    font-family: 'Roboto Slab', serif;
+    font-size: 2.0rem;
+    line-height: 1.8;
+    font-weight: 700;
+}
+@media screen and (max-width: 860px) {
+    h1{
+        font-size: 2.7rem;
+        line-height: 3.6rem;
+        margin-top: 16px;
+    }
+}
+
+P{
+    
+}
+
+/* Nav */
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav ul li a{
+    padding: 0 10px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Links */
+a{
+    text-decoration: none;
+    color: #00FF00
+}
+
+/* Banner */
+.banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(237, 237, 237);
+    padding: 60px 20px;
+}
+
+.banner > *{
+    max-width: 800px;
+    text-align: center;
+}
+
+/* content */
+.content{
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Column/box content */
+.box{
+    width: 50%;
+    box-sizing: border-box; 
+    margin-bottom: 40px;
+}
+.box:first-child{
+    margin-right: 40px;
+}
+@media screen and (max-width: 860px) {
+    .box{
+        width: 100%;
+    }
+    .box:first-child{
+        margin-right: 0;
+    }
+}

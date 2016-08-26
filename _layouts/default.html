@@ -4,24 +4,35 @@
 <head>
     <title>{{ page.title }}</title>
     <!-- link to main stylesheet -->
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="/site.css">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/cv">CV</a></li>
-            <li><a href="/blog">Blog</a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <a href="/" class="logo">
+            <img src="/assets/logo3.png" height="46" />
+        </a>
+        <span class="flex"></span>
+        <nav>
+            <ul>
+                <li><a href="/services">Tjänster</a></li>
+                <li><a href="/blog">Blogg</a></li>
+                <li><a href="/career">Kärriar</a></li>
+                <li><a href="/clients">Kunder</a></li>
+                <li><a href="/about">Om oss</a></li>
+                <li><a href="/contacts">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
     <div class="container">
-
         {{ content }}
-
     </div>
-    <!-- /.container -->
     <footer>
         <ul>
             <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
