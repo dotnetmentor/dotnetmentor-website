@@ -144,6 +144,9 @@ h5{
 p{
     margin-bottom: 20px;
 }
+p:last-child{
+    margin-bottom: 0;
+}
 
 /* Nav */
 nav ul li{
@@ -173,7 +176,9 @@ nav ul li a{
         display: none;
         position: absolute;
         top: 70px;
+        left: 0;
         width: 100%;
+        z-index: 1;
     }
     nav ul{
         display: flex;
