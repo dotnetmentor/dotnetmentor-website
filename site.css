@@ -246,3 +246,7 @@ a{
     font-size: 24px;
     width: 24px;
 }
+
+.map{
+    height: 480px;
+}
