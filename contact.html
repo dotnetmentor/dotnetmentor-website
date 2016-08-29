@@ -1,6 +1,7 @@
 --- 
 layout: default 
-title: Dotnet Mentor - Kontakt 
+title: Dotnet Mentor - Kontakt
+enable_leaflet: yes
 ---
 
 <div class="banner">
@@ -16,7 +17,7 @@ title: Dotnet Mentor - Kontakt
 
     <div class="layout-row more-space">
         <div class="box card">
-            <img src="http://www.gravatar.com/avatar/0271e6aa0d5d00e75e03ae4e86fe84a8.?s=220&d=identicon" style="width: 100%;" />
+            <img src="http://www.gravatar.com/avatar/0271e6aa0d5d00e75e03ae4e86fe84a8.?s=220&amp;d=identicon" style="width: 100%;" />
             <h4>Andreas Larsson</h4>
             <p>Sed non purus ac ipsum ullamcorper pellentesque at ac mi.</p>
             <ul class="info-list">
@@ -26,15 +27,61 @@ title: Dotnet Mentor - Kontakt
         </div>
 
         <div class="box card">
-            <img src="http://www.gravatar.com/avatar/fbb1cf28d04b659ef1a75ef45bccba12.?s=220&d=identicon" style="width: 100%;" />
+            <img src="http://www.gravatar.com/avatar/fbb1cf28d04b659ef1a75ef45bccba12.?s=220&amp;d=identicon" style="width: 100%;" />
             <h4>Kristoffer Ahl</h4>
             <p>Fusce aliquam dui orci, eu hendrerit nisi dictum nec.</p>
         </div>
 
         <div class="box card">
-            <img src="http://www.gravatar.com/avatar/27f6974f652aefe4dde8db9000e42abf.?s=220&d=identicon" style="width: 100%;" />
+            <img src="http://www.gravatar.com/avatar/27f6974f652aefe4dde8db9000e42abf.?s=220&amp;d=identicon" style="width: 100%;" />
             <h4>Jonatan Granqvist</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
         </div>
     </div>
+
+    <div id="map" class="map"></div>
+
+    <script type="text/javascript" src="/assets/vendor/leaflet/leaflet.js"></script>
+    <script type="text/javascript">
+        var tileUrl = 'https://api.mapbox.com/v4/mapbox.high-contrast/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') +'.png',
+            token = 'pk.eyJ1IjoiZG90bmV0bWVudG9yIiwiYSI6ImNpc2ZxaDFxODAwMzgyc282YnBvY2R0Y3YifQ.DsdwjEhSDSgNUHLdPQf9cw',
+            popupContent =
+                '<h3>Dotnet Mentor</h3><br>' +
+                'Första Långgatan 22<br>' +
+                '413 28 Göteborg<br>' +
+                'Sweden',
+            loc = L.latLng(57.69970, 11.94698),
+            map = L.map('map', { scrollWheelZoom: false }).setView(loc, 16),
+            insideMap = false,
+            scrollWheelTimer;
+
+        L.tileLayer(tileUrl + '?access_token=' + token).addTo(map);
+        L.marker(loc)
+            .addTo(map)
+            .bindPopup(popupContent)
+            .openPopup();
+
+        // Tricks to normally disable scroll wheel, but
+        // enable it once the user hovers for a bit over the map.
+        map
+            .on('mouseover', function() {
+                insideMap = true;
+                scrollWheelTimer = setTimeout(function() {
+                    map.scrollWheelZoom.enable()
+                }, 1000);
+            })
+            .on('mouseout', function() {
+                insideMap = false;
+                clearTimeout(scrollWheelTimer);
+                map.scrollWheelZoom.disable();
+            });
+        document.addEventListener('scroll', function() {
+            if (insideMap) {
+                clearTimeout(scrollWheelTimer);
+                scrollWheelTimer = setTimeout(function() {
+                    map.scrollWheelZoom.enable()
+                }, 1000);
+            }
+        });
+    </script>
 </div>

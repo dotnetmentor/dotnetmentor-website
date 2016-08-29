@@ -210,3 +210,7 @@ a{
 .info-list li i{
     margin-right: 8px;
 }
+
+.map{
+    height: 480px;
+}
