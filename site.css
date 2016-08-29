@@ -33,7 +33,7 @@ html{
     color: rgba(0,0,0,0.7);
 }
 
-html > *{
+body{
     font-size: 1.6rem;
     font-weight: 400;
     letter-spacing: 0.010em;
@@ -63,7 +63,7 @@ html > *{
 .main-header{
     display: flex;
     flex-direction: row;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.86);
     height: 70px;
     align-items: center;
     justify-content: center;
@@ -98,6 +98,10 @@ h4{
     line-height: 1.8;
     font-weight: 700;
 }
+h5{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+}
 @media screen and (max-width: 860px) {
     h1{
         font-size: 2.7rem;
@@ -105,9 +109,8 @@ h4{
         margin-top: 16px;
     }
 }
-
-P{
-    
+.preamble{
+    font-size: 1.8rem;
 }
 
 /* Nav */
@@ -136,8 +139,19 @@ a{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(237, 237, 237);
-    padding: 60px 20px;
+    background: black;
+    padding: 80px 40px;
+    background: url('assets/bg2.jpg');
+    background-repeat: no-repeat;
+    background-position: 0% 30%;
+    color: #fff;
+    
+/*text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);*/
+    background-size: cover;
+    filter: grayscale(100%)
+}
+.banner h1{
+    color: #fff;
 }
 
 .banner > *{
@@ -152,20 +166,47 @@ a{
     padding: 60px 20px;
 }
 
+.more-space{
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
 /* Column/box content */
 .box{
-    width: 50%;
+    width: 100%;
     box-sizing: border-box; 
     margin-bottom: 40px;
-}
-.box:first-child{
     margin-right: 40px;
+}
+.box:last-child{
+    margin-right: 0;
+}
+.box.card{
+    background: rgb(237, 237, 237);
+    padding: 20px;
+    margin-right: 20px;
 }
 @media screen and (max-width: 860px) {
     .box{
         width: 100%;
     }
-    .box:first-child{
+    .box:last-child{
         margin-right: 0;
     }
+}
+
+/* info Lists */
+.info-list{
+    margin-top: 15px;
+}
+.info-list li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+}
+
+.info-list li i{
+    margin-right: 8px;
 }
