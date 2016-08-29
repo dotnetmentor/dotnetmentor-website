@@ -159,6 +159,7 @@ a{
     ), url('assets/bg.jpg');
     background-repeat: no-repeat;
     background-position: 0% 30%;
+    background-size: cover;
 }
 
 .contact.banner {
@@ -195,7 +196,7 @@ a{
       rgba(0, 0, 0, 0.45)
     ), url('assets/bg4.jpg');
     background-repeat: no-repeat;
-    background-position: 0% 30%;
+    background-position: 0% 18%;
 }
 
 .banner h1{
