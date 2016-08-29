@@ -1,7 +1,14 @@
 ---
 layout: post
-title: "Hank Quinlan, Horrible Cop, Launches Site"
-date: 2014-04-30
+title: "Ny hemsida"
+date: 2016-08-29
 ---
 
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+<div class="full-image">
+<img src="/assets/bg.jpg" alt="fin sss" />
+</div>
+
+Yey! Äntligen har vi uppdaterat våran hemsida så att den ser fin och fräsch ut.
+Vi hoppas att ni besökare ska gilla den.
+
+Vi firade genom att se coola ut med Manhattan Skyline in bakgrunden!

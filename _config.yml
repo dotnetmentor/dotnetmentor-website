@@ -1,6 +1,8 @@
 name: Dotnet Mentor
 repository: dotnetmentor/dotnetmentor.github.io
 markdown: kramdown
-gems: ['jekyll-github-metadata']
+gems: ['jekyll-github-metadata', 'jekyll-paginate']
 host: 0.0.0.0
-permalink: /blog/:year/:month/:day/:title
+permalink: /news/:year/:month/:day/:title
+paginate: 5
+paginate_path: "/news/page:num/"
