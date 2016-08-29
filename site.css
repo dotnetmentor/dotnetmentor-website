@@ -130,7 +130,7 @@ nav ul li a{
 /* Links */
 a{
     text-decoration: none;
-    color: #00FF00
+    color: rgb(87, 196, 157);
 }
 
 /* Banner */
@@ -141,7 +141,10 @@ a{
     justify-content: center;
     background: black;
     padding: 80px 40px;
-    background: url('assets/bg2.jpg');
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.45), 
+      rgba(0, 0, 0, 0.45)
+    ), url('assets/bg5.jpg');
     background-repeat: no-repeat;
     background-position: 0% 30%;
     color: #fff;
@@ -163,7 +166,7 @@ a{
 .content{
     max-width: 960px;
     margin: 0 auto;
-    padding: 60px 20px;
+    padding: 40px 20px;
 }
 
 .more-space{
@@ -178,20 +181,47 @@ a{
     margin-bottom: 40px;
     margin-right: 40px;
 }
-.box:last-child{
+.box:last-child, .box.card:last-child{
     margin-right: 0;
 }
 .box.card{
     background: rgb(237, 237, 237);
-    padding: 20px;
     margin-right: 20px;
+    padding: 20px;
 }
-@media screen and (max-width: 860px) {
-    .box{
+.box.card.single{
+    width: 32%;
+}
+.box.card .card-image{
+    max-height: 260px;
+    overflow: hidden;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+.box.card img{
+    width: 100%;
+    box-sizing: border-box;
+}
+@media screen and (min-width: 480px) and (max-width: 860px) {
+    .box, .box.card.single{
         width: 100%;
     }
-    .box:last-child{
+    .box:last-child, .box.card:last-child{
         margin-right: 0;
+    }
+    .box.card.contact, .box.card.single.contact{
+        display: flex;
+        flex-direction: row;
+    }
+    .box.card.contact .card-image{
+        max-height: 220px;
+    }
+    .box.card.contact .card-content{
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width: 479px){
+    .box.card.single{
+        width: 100%;
     }
 }
 
@@ -204,9 +234,15 @@ a{
     font-size: 1.4rem;
     display: flex;
     align-items: center;
-    margin: 5px 0;
+    margin: 7px 0;
+}
+
+.info-list li a{
+    word-break: break-all;
 }
 
 .info-list li i{
-    margin-right: 8px;
+    margin-right: 10px;
+    font-size: 24px;
+    width: 24px;
 }
