@@ -7,12 +7,11 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     {% if page.enable_leaflet %}
-      <link rel="stylesheet" type="text/css" href="/assets/vendor/leaflet/leaflet.css">
+      <link rel="stylesheet" type="text/css" href="/assets/vendor/leaflet/leaflet.css"> 
     {% endif %}
-	<link rel="stylesheet" type="text/css" href="/fontello.css">
+    <link rel="stylesheet" type="text/css" href="/fontello.css">
     <link rel="stylesheet" type="text/css" href="/site.css">
 </head>
 
@@ -39,10 +38,13 @@
         {{ content }}
     </div>
     <footer>
-        <ul>
-            <li><a href="mailto:hankquinlanhub@gmail.com">email</a></li>
-            <li><a href="https://github.com/hankquinlan">github.com/hankquinlan</a></li>
-        </ul>
+        <div class="content">
+            <ul class="info-list">
+                <li><i class="material-icons">phone</i> +46 70 7493603</li>
+                <li><i class="material-icons">mail</i> <a href="mailto:info@dotnetmentor.se">info@dotnetmentor.se</a></li>
+                <li><i class="material-icons">home</i> Första långgatan 22, 413 28 Göteborg </li>
+            </ul>
+        </div>
     </footer>
 </body>
 

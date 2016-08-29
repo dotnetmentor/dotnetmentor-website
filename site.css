@@ -38,6 +38,13 @@ body{
     font-weight: 400;
     letter-spacing: 0.010em;
     line-height: 1.8em;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.container{
+    flex: 1;
 }
 
 /* Layouting */
@@ -73,6 +80,26 @@ body{
 .logo{
     line-height: 1;
 }
+
+/* Footer */
+footer{
+    background: rgba(0,0,0,0.86);
+    color: #fff;
+}
+footer .content{
+    padding: 10px 20px;
+}
+footer .info-list{
+    margin-top: 0;
+}
+@media screen and (min-width: 860px) {
+    footer .info-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
 
 /* Typings */
 h1{
@@ -249,4 +276,9 @@ a{
 
 .map{
     height: 480px;
+}
+
+/* Buttons */
+button{
+    background: transparent;
 }
