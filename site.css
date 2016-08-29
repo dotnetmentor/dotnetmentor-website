@@ -41,6 +41,7 @@ body{
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    background-color: #f0f0f0; 
 }
 
 .container{
@@ -140,6 +141,10 @@ h5{
     font-size: 1.8rem;
 }
 
+p{
+    margin-bottom: 20px;
+}
+
 /* Nav */
 nav ul li{
     display: inline-block;
@@ -152,6 +157,44 @@ nav ul li a{
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.5rem;
+}
+#menu-btn{
+    background: transparent;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 10px;
+    display: none;
+    cursor: pointer;
+}
+@media screen and (max-width: 860px) {
+    nav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        width: 100%;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li a{
+        padding: 10px;
+        background: rgba(0,0,0,0.9);
+        display: block;
+        border-bottom: 1px solid transparent;
+    }
+
+    #menu-btn{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.menu-btn i{
+    margin-left: 5px;
 }
 
 /* Links */
@@ -260,7 +303,8 @@ a{
     margin-right: 0;
 }
 .box.card{
-    background: rgb(237, 237, 237);
+    background: #fff;
+    border: solid 1px #e5e5e5;
     margin-right: 20px;
     padding: 20px;
 }
@@ -276,6 +320,15 @@ a{
     width: 100%;
     box-sizing: border-box;
 }
+.box ul li{
+    margin-left: 20px;
+    font-style: italic;
+}
+.box ul.info-list li{
+    margin-left: 0;
+    font-style: normal;
+}
+
 @media screen and (min-width: 480px) and (max-width: 860px) {
     .box, .box.card.single{
         width: 100%;
@@ -359,7 +412,7 @@ a{
 
 /* Blog/news */
 article{
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #e5e5e5;
     padding-bottom: 60px;
     margin-bottom: 60px;
 }
