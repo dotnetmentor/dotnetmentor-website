@@ -7,6 +7,10 @@ Install bundler
     
     gem install bundler
 
+Install bundles
+
+    bundle install
+
 #Run on local computer
     bundle exec jekyll serve
 
