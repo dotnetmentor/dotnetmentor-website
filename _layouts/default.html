@@ -4,13 +4,28 @@
 <head>
     <title>{{ page.title }}</title>
     <!-- link to main stylesheet -->
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% else %}
+    <meta name="description" content="{{ page.title }}">
+    {% endif %}
+    <meta name="keywords" content="{{ page.keywords }}">
+
+    <meta name="author" content="dotnetmentor.se">
+    <meta name="contact" content="info@dotnetmentor.se">
+    <meta name="copyright" content="Copyright © 2016 Dotnet Mentor. Alla rättigheter reserverade.">
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
     <link rel="icon" sizes="192x192" href="/assets/dotnetmentor-icon.png"> 
     <link rel="icon" href="/assets/favicon.png" type="image/png">
 
