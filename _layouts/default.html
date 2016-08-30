@@ -32,7 +32,7 @@
                 <li><a href="/contact">Kontakt</a></li>
             </ul>
         </nav>
-        <button id="menu-btn" onclick="toggleMenu()">Menu <i class="material-icons">menu</i></button>
+        <button id="menu-btn" onclick="toggleMenu()"><span>Menu</span> <i class="material-icons">menu</i></button>
     </header>
 
 
@@ -52,7 +52,6 @@
     <script>
         var mainNav = document.getElementById('nav');
         function toggleMenu(){
-            console.log(mainNav.style.display);
             mainNav.style.display = mainNav.style.display == 'block' ? 'none' : 'block';
         }
     </script>

@@ -170,6 +170,7 @@ nav ul li a{
     padding: 10px;
     display: none;
     cursor: pointer;
+    outline: none;
 }
 @media screen and (max-width: 860px) {
     nav{
