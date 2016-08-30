@@ -13,6 +13,100 @@ description: Dotnet Mentor - Mentorer och konsulter inom IT-arkitektur och syste
 </div>
 
 <div class="content">
-    <div class="layout-row">
+    <div class="blurb">
+        <h2>Solid kunskap inom utveckling</h2>
+        <p>Vi erbjuder konsulttjänster inom mjukvaruutveckling, som del i ert utvecklingsteam, som mentor och utbildare eller med helhetsansvar för projekt och produktutveckling. Vi har mångårig erfarenhet av små så väl som stora projekt. Vi jobbar med moderna tekniker och .NET ligger oss lika varmt om hjärtat som JavaScript eller Ruby. Vi arbetar aktivit inom flera Open Source-projekt.</p>
+        <p>
+            <img src="/assets/office.jpg" alt="Dotnet Mentors kontor" />
+        </p>
+    </div>
+
+    <div class="blurb">
+        <h2>Specialister med djup och bredd</h2>
+
+        <div class="layout-row">
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/89fa409841291104b3d9e10652661463.?s=220&amp;d=identicon" />
+                </div>
+                <div class="card-content">
+                    <h4>Mikael</h4>
+                    <p>DDD, CQRS, VD</p>
+                </div>
+            </div>
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/da8b4072333da3794dedd74d966527d6.?s=220&amp;d=identicon" />
+                </div>
+                <div class="card-content">
+                    <h4>Per</h4>
+                    <p>Webbkartor och GIS</p>
+                </div>
+            </div>
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/82cae1561ccc493b052c65c25ec7a6d9.?s=220&amp;d=identicon" />
+                </div>
+                <div class="card-content">
+                    <h4>James</h4>
+                    <p>JavaScript-guru, Ruby-trollkarl</p>
+                </div>
+            </div>
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/81c363d8cfba0807e1b2b053b661d6f0.?s=220&amp;d=identicon" style="width: 100%;" />
+                </div>
+                <div class="card-content">
+                    <h4>Fredrik</h4>
+                    <p>Scala, data-analys</p>
+                </div>
+            </div>
+        </div>
+        <div class="layout-row">
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/fbb1cf28d04b659ef1a75ef45bccba12.?s=220&amp;d=identicon" style="width: 100%;" />
+                </div>
+                <div class="card-content">
+                    <h4>Kristoffer</h4>
+                    <p>CQRS, event sourcing, Git och continuous integration</p>
+                </div>
+            </div>
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/27f6974f652aefe4dde8db9000e42abf.?s=220&amp;d=identicon" style="width: 100%;" />
+                </div>
+                <div class="card-content">
+                    <h4>Jonatan</h4>
+                    <p>React, D3</p>
+                </div>
+            </div>
+            <div class="box card contact">
+                <div class="card-image">
+                    <img src="http://www.gravatar.com/avatar/0271e6aa0d5d00e75e03ae4e86fe84a8.?s=220&amp;d=identicon" style="width: 100%;" />
+                </div>
+                <div class="card-content">
+                    <h4>Andreas Larsson</h4>
+                    <p>Angular, UX</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="blurb">
+        <h2>Nyheter</h2>
+        <div class="layout-row">
+        {% for post in site.posts | limit:3 %}
+        <div class="box card">
+            <div class="card-content">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                {{ post.excerpt }}
+                <p>
+                    <a href="{{post.url}}">Läs mer</a>
+                </p>
+            </div>
+        </div>
+        {% endfor %}
+        </div>
     </div>
 </div>
