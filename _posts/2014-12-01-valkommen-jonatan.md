@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Välkommen Jonatan Granqvist!"
-date: 2014-01-12
+title: Välkommen Jonatan!
+date: 2014-12-01
 ---
-
-Det tog bara två och ett halvt år, men sen var han vår!
+![Jonatan Granqvist](http://www.gravatar.com/avatar/27f6974f652aefe4dde8db9000e42abf.?s=220&d=identicon)
+<!--more-->
 
 Efter några års sejour hos Hogia i det goda kustnära samhället Stenungsund har han bestämt sig för att pröva lyckan i goa Göteborg, något vi är väldigt glada för.
 
