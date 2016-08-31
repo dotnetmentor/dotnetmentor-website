@@ -68,6 +68,18 @@ body{
     -webkit-flex-direction: column;
     flex-direction: column;
 }
+.layout-wrap{
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-justify-content: center;
+    -moz-justify-content: center;
+    justify-content: center;
+    
+}
 .flex {
     -ms-flex: 1 0 auto;
     -webkit-flex: 1 0 auto;
@@ -154,6 +166,10 @@ h5{
     font-family: 'Roboto Slab', serif;
     font-weight: 700;
     word-wrap: break-word;
+}
+h6{
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
 }
 @media screen and (max-width: 860px) {
     h1, .large-heading{
@@ -347,7 +363,6 @@ a{
 }
 .box.card{
     background: #fff;
-    /*border: solid 1px #e5e5e5;*/
     margin-right: 20px;
     padding: 20px;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12)
@@ -355,14 +370,11 @@ a{
 .box.card.single{
     width: 32%;
 }
-.box.card .card-image{
-    max-height: 260px;
-    overflow: hidden;
-    border: 1px solid rgba(0,0,0,0.05);
-}
 .box.card img{
     width: 100%;
     box-sizing: border-box;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.05);
 }
 .box ul li{
     margin-left: 20px;
@@ -389,7 +401,6 @@ a{
         flex-direction: row;
     }
     .box.card.contact .card-image{
-        max-height: 220px;
         width: 25%;
     }
     .box.card.contact .card-content{
@@ -403,6 +414,25 @@ a{
     .box.card.single{
         width: 100%;
     }
+}
+
+/*clients*/
+.clients .box.card{
+    align-items: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex: 1 0 20%;
+    -moz-flex: 1 0 20%;
+    flex: 1 0 20%;
+    margin: 10px;
+    min-width: 200px;
+    max-width: 220px;
+    height: 120px;
+}
+.clients .box.card img{
+    border: none;
 }
 
 /* info Lists */

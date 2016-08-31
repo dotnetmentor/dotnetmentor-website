@@ -102,15 +102,17 @@ description: Konsulter, mentorer, experthjälp eller utveckling av en produkt? H
         </a>
     </div>
 
-    <!--<h4>Nyheter</h4>
+    <h4 class="more-space large-heading" style="margin-top: 70px;text-align:center">Nyheter</h4>
     <div class="layout-row">
         {% for post in site.posts | limit:3 %}
-        <div class="box card" style="max-height: 250px; overflow: hidden; text-overflow:ellipsis; padding: 0;">
-            <div class="card-content">
-                <h6><a href="{{ post.url }}">{{ post.title }}</a></h6>
-                {{ post.excerpt }}
-            </div>
+        <div class="box" style="max-height: 250px; overflow: hidden; text-overflow:ellipsis; padding: 0;">
+            <a href="{{ post.url }}">
+                <div class="card-content">
+                    <h6>{{ post.title }}</h6>
+                    {{ post.excerpt }}
+                </div>
+            </a>
         </div>
         {% endfor %}
-    </div>-->
+    </div>
 </div>
