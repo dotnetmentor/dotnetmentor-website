@@ -514,7 +514,7 @@ article:last-child{
     border-bottom: none;
 }
 
-article .full-image img{
+.full-image img{
     width: 100%;
 }
 
