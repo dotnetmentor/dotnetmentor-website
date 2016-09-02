@@ -281,33 +281,43 @@ a{
 }
 
 .index.banner {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.45), 
-      rgba(0, 0, 0, 0.45)
-    ), url('assets/bg.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('assets/bg10.jpg');
     background-repeat: no-repeat;
-    background-position: 0% 30%;
+    background-position: 0% 40%;
     background-size: cover;
+}
+
+.index.banner #large-logo{
+    height: 120px;
+}
+@media screen and (max-width: 860px) {
+    .index.banner #large-logo{
+        height: 80px;
+    }   
 }
 
 .contact.banner {
     background: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)
-    ), url('assets/bg5.jpg');
+    ), url('assets/bg12.jpg');
     background-repeat: no-repeat;
-    background-position: 0% 30%;
+    background-position: 0% 20%;
     background-size: cover;
 }
 
 .about.banner {
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.3), 
-      rgba(0, 0, 0, 0.3)
-    ), url('assets/bg2.jpg');
-    background-repeat: no-repeat;
-    background-position: 10% 20%;
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('assets/bg2.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 20%;
+}
+
+.clients.banner {
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('assets/bg18.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0 90%;
 }
 
 .career.banner {
@@ -324,9 +334,9 @@ a{
     background: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)
-    ), url('assets/bg4.jpg');
+    ), url('assets/bg11.jpg');
     background-repeat: no-repeat;
-    background-position: 0% 18%;
+    background-position: 0% 50%;
     background-size: cover;
 }
 
