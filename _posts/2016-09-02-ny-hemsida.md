@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ny hemsida"
-date: 2016-08-29
+date: 2016-09-02
 ---
 
 <div class="full-image">
