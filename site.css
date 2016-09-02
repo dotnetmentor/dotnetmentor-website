@@ -281,7 +281,7 @@ a{
 }
 
 .index.banner {
-    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('assets/bg10.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('assets/index.jpg');
     background-repeat: no-repeat;
     background-position: 0% 40%;
     background-size: cover;
@@ -300,21 +300,21 @@ a{
     background: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)
-    ), url('assets/bg12.jpg');
+    ), url('assets/contact.jpg');
     background-repeat: no-repeat;
     background-position: 0% 20%;
     background-size: cover;
 }
 
 .about.banner {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('assets/bg2.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('assets/about.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 20%;
 }
 
 .clients.banner {
-    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('assets/bg18.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('assets/clients.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 90%;
@@ -324,7 +324,7 @@ a{
     background: linear-gradient(
       rgba(0, 0, 0, 0.35), 
       rgba(0, 0, 0, 0.35)
-    ), url('assets/bg3.jpg');
+    ), url('assets/career.jpg');
     background-repeat: no-repeat;
     background-position: 10% 35%;
     background-size: cover;
@@ -334,7 +334,7 @@ a{
     background: linear-gradient(
       rgba(0, 0, 0, 0.45), 
       rgba(0, 0, 0, 0.45)
-    ), url('assets/bg11.jpg');
+    ), url('assets/services.jpg');
     background-repeat: no-repeat;
     background-position: 0% 50%;
     background-size: cover;
