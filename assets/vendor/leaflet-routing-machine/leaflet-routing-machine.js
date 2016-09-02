@@ -2493,7 +2493,7 @@ if (typeof module !== undefined) module.exports = polyline;
 	L.extend(L.Routing, require('./L.Routing.GeocoderElement'));
 	L.extend(L.Routing, require('./L.Routing.Waypoint'));
 
-	L.Routing.Plan = L.Class.extend({
+	L.Routing.Plan = L.Layer.extend({
 		includes: L.Mixin.Events,
 
 		options: {
