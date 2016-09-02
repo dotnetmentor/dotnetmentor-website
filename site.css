@@ -689,3 +689,9 @@ em{
     font-size: 1.2rem;
     line-height: 1.4rem;
 }*/
+
+.photo-credit {
+    text-align: right;
+    color: #aaa;
+    font-size: 1.1rem;
+}
