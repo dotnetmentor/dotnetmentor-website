@@ -44,12 +44,12 @@
         <span class="flex"></span>
         <nav id="nav">
             <ul>
-                <li><a href="/services">Tjänster</a></li>
-                <li><a href="/news">Nyheter</a></li>
-                <li><a href="/career">Karriär</a></li>
-                <li><a href="/clients">Kunder</a></li>
-                <li><a href="/about">Om oss</a></li>
-                <li><a href="/contact">Kontakt</a></li>
+                <li><a href="/services" {% if page.url == "/services" %}class="active"{% endif %}>Tjänster</a></li>
+                <li><a href="/news" {% if page.url == "/news/" %}class="active"{% endif %}>Nyheter</a></li>
+                <li><a href="/career" {% if page.url == "/career" %}class="active"{% endif %}>Karriär</a></li>
+                <li><a href="/clients" {% if page.url == "/clients" %}class="active"{% endif %}>Kunder</a></li>
+                <li><a href="/about" {% if page.url == "/about" %}class="active"{% endif %}>Om oss</a></li>
+                <li><a href="/contact" {% if page.url == "/contact" %}class="active"{% endif %}>Kontakt</a></li>
             </ul>
         </nav>
         <button id="menu-btn" onclick="toggleMenu()"><i class="material-icons">menu</i></button>

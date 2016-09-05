@@ -122,6 +122,10 @@ footer .content{
 footer .info-list{
     margin-top: 0;
 }
+footer a {
+    color: #00DA00;
+}
+
 @media screen and (min-width: 860px) {
     footer .info-list{
         display: -ms-flexbox;
@@ -193,14 +197,19 @@ p:last-child{
 nav ul li{
     display: inline-block;
     list-style-type: none;
+    margin: 0 10px
 }
 
 nav ul li a{
-    padding: 0 10px;
     color: #fff;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 1.5rem;
+    opacity: 0.8;
+}
+
+nav ul li a.active{
+    opacity: 1;
 }
 #menu-btn{
     background: transparent;
@@ -255,8 +264,9 @@ nav ul li a{
 /* Links */
 a{
     text-decoration: none;
-    color: #00DA00;
+    color: #007500;
     word-wrap: break-word;
+    font-weight: bold;
 }
 
 /* Banner */
@@ -630,7 +640,7 @@ em{
     font-size: 1.4rem;
     font-weight: 500;
     color: #fff;
-    background: #00DA00;
+    background: #007500;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
 }
 
@@ -689,3 +699,9 @@ em{
     font-size: 1.2rem;
     line-height: 1.4rem;
 }*/
+
+.photo-credit {
+    text-align: right;
+    color: #aaa;
+    font-size: 1.1rem;
+}
