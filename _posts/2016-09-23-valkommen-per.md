@@ -6,6 +6,7 @@ date: 2016-09-23
 
 
 Skall man behöva åka ända till Alingsås för att hitta det man vill ha? Ja, tydligen, för där hittade vi Per Näslund, vår senast adopterade familjemedlem.
+<!--more-->
 
 Per har en gedigen utbildning inom spelutveckling från högskolan i Skövde och där pratar man, förutom linjär algebra och shaders, även C# och C++.
 Detta till trots så rör han sig världsvant även inom språk och tekniker som javascript, typescript, html och angular.
