@@ -287,7 +287,6 @@ a{
     ), url('assets/bg5.jpg');
     color: #fff;
     background-size: cover;
-    filter: grayscale(100%)
 }
 
 .index.banner {
