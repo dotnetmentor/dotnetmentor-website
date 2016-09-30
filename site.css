@@ -403,7 +403,10 @@ a{
     margin-left: 0;
     font-style: normal;
 }
-
+.box.news a{
+    color: rgba(0,0,0,0.7);
+    font-weight: normal;
+}
 @media screen and (min-width: 480px) and (max-width: 860px) {
     .box, .box.card.single{
         width: 100%;
