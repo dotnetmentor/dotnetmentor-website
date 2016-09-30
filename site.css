@@ -230,14 +230,19 @@ nav ul li a.active{
         left: 0;
         width: 100%;
         z-index: 1;
+	background: rgba(0,0,0,0.86);
     }
     nav ul{
         display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    	display: -webkit-flex;
+    	display: flex;
         -ms-flex-direction: column;
-    -webkit-flex-direction: column;
-    flex-direction: column;
+    	-webkit-flex-direction: column;
+    	flex-direction: column;
+    }
+    nav ul li{
+        margin: 0;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
     }
     nav ul li a{
         padding: 10px;
@@ -248,11 +253,11 @@ nav ul li a.active{
 
     #menu-btn{
         display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
+    	display: -webkit-flex;
+    	display: flex;
         -ms-flex-direction: row;
-    -webkit-flex-direction: row;
-    flex-direction: row;
+    	-webkit-flex-direction: row;
+    	flex-direction: row;
         align-items: center;
     }
 }
