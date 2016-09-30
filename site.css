@@ -242,7 +242,7 @@ nav ul li a.active{
     }
     nav ul li{
         margin: 0;
-	border-bottom: 1px solid rgba(255,255,255,0.2);
+	border-bottom: 1px solid rgb(56,56,56);
     }
     nav ul li a{
         padding: 10px;
