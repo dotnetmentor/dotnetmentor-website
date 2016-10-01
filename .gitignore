@@ -1,2 +1,5 @@
 _site
 Gemfile.lock
+npm-debug.log
+node_modules
+.DS_Store
