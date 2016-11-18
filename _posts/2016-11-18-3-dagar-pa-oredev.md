@@ -3,7 +3,7 @@ layout: post
 title: "Actors, Microservices & ChatOps - 3 dagar på Öredev"
 date: 2016-11-18
 ---
-I veckan som gick hade vi nöjet att besöka Öredev igen. En 3 dagars konferens i Malmö för utvecklare och agila freaks. Här följer ett par reflektioner från årets upplaga.
+I förra veckan hade vi nöjet att besöka Öredev igen. En 3 dagars konferens i Malmö för utvecklare och agila freaks. Här följer ett par reflektioner från årets upplaga.
 
 <!--more-->
 
