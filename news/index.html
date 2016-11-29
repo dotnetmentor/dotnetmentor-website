@@ -19,11 +19,11 @@ description: Följ oss och vad som händer hos Dotnet Mentor
     <!-- Pagination links -->
     <div class="pagination">
         {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="material-icons">chevron_left</i> Tidigare</a> {% else %}
+        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="material-icons">chevron_left</i> Senare</a> {% else %}
         <span class="disabled"><i class="material-icons">chevron_left</i> Tidigare</span> {% endif %}
         <span class="page_number ">{{ paginator.page }} av {{ paginator.total_pages }}</span> {% if paginator.next_page
         %}
-        <a href="{{ paginator.next_page_path }}" class="next">Senare <i class="material-icons">chevron_right</i></a> {% else %}
+        <a href="{{ paginator.next_page_path }}" class="next">Tidigare <i class="material-icons">chevron_right</i></a> {% else %}
         <span class="disabled">Senare <i class="material-icons">chevron_right</i></span> {% endif %}
     </div>
 </div>
