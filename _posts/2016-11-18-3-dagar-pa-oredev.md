@@ -8,7 +8,7 @@ I förra veckan hade vi nöjet att besöka Öredev igen. En 3 dagars konferens i
 <!--more-->
 
 ### Microservices
-Det var tydligt att microservices är på allas läppar just nu. Många va talarna som hade skickat in om att prata runt ämnet. Tyvärr var det få som lyckades tillföra något vettigt till diskussionen.
+Det var tydligt att microservices är på allas läppar just nu. Många av talarna som hade skickat in om att prata runt ämnet. Tyvärr var det få som lyckades tillföra något vettigt till diskussionen.
 
 Klart är att många problem är svårlösta och ofta kräver komplexa lösningar. Microservices inte är en gratis lunch!
 
