@@ -655,16 +655,24 @@ em{
 .scroll-row{
     display: flex;
     flex-direction: row;
-    overflow-x: auto;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 .scroll-row > .contact{
    min-width: calc(960px / 8);
    text-align: center;
    color: rgba(0,0,0,0.7);
+   margin-bottom: 16px;
 }
-.scroll-row > .contact img{
+.scroll-row > .contact {
+    width: auto;
+    max-width: 160px;
+}
+
+.scroll-row > .contact img {
     width: 100%;
 }
+
 .scroll-row > .contact h5{
     font-size: 1.8rem;
 }
