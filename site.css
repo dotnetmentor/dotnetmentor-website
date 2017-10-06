@@ -720,3 +720,10 @@ em{
     color: #aaa;
     font-size: 1.1rem;
 }
+
+.box.card img.pong-icon {
+    margin-right: 10px;
+    font-size: 24px;
+    width: 24px;
+    height: 24px;
+}
