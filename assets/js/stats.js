@@ -68,6 +68,6 @@ db.allDocs({
       var id = statEl.getAttribute('data-id')
       var playerStats = stats[id]
       statEl.innerHTML = (playerStats.skill[0] - playerStats.skill[1] * 3).toFixed(1) +
-        (playerStats.order === 0 ? '&nbsp;<i class="material-icons">grade</i>' : '')
+        (playerStats.order === 0 ? '&nbsp;<i class="material-icons" title="King of Pong">grade</i>' : '')
     })
   })
