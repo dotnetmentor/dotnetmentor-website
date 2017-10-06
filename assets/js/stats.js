@@ -67,7 +67,40 @@ db.allDocs({
     document.querySelectorAll('.pong-stat').forEach(function (statEl, i) {
       var id = statEl.getAttribute('data-id')
       var playerStats = stats[id]
-      statEl.innerHTML = (playerStats.skill[0] - playerStats.skill[1] * 3).toFixed(1) +
-        (playerStats.order === 0 ? '&nbsp;<i class="material-icons" title="King of Pong">grade</i>' : '')
+      if (playerStats) {
+        statEl.innerHTML = (playerStats.skill[0] - playerStats.skill[1] * 3).toFixed(1) +
+          (playerStats.order === 0 ? '&nbsp;<i class="material-icons" title="King of Pong">grade</i>' : '')
+      }
+    })
+  })
+
+fetch('https://gist.githubusercontent.com/perliedman/55b124308d68458ad29a3824e18f9aa4/raw/rankme-stats.txt', {mode: 'cors'})
+  .then(function (res) { return res.text() })
+  .then(function (data) {
+    var lines = data.split('\n')
+    var stats = lines.reduce(function (a, line) {
+      var cols = line.split('\t')
+      a[cols[0]] = {
+        kdr: Number(cols[1]),
+        score: Number(cols[2])
+      }
+      return a
+    }, {})
+
+    Object.keys(stats)
+      .sort(function (a, b) {
+        return stats[b].kdr - stats[a].kdr
+      })
+      .forEach(function (id, i) {
+        stats[id].order = i
+      })
+
+    document.querySelectorAll('.cs-stat').forEach(function (statEl, i) {
+      var id = statEl.getAttribute('data-id')
+      var playerStats = stats[id]
+      if (playerStats) {
+        statEl.innerHTML = playerStats.kdr.toFixed(2) +
+          (playerStats.order === 0 ? '&nbsp;<i class="material-icons" title="CS Champion">grade</i>' : '')
+      }
     })
   })

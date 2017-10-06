@@ -721,7 +721,7 @@ em{
     font-size: 1.1rem;
 }
 
-.box.card img.pong-icon {
+.box.card img.pong-icon, .box.card img.cs-icon {
     margin-right: 10px;
     font-size: 24px;
     width: 24px;
