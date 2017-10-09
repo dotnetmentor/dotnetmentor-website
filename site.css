@@ -727,3 +727,8 @@ em{
     width: 24px;
     height: 24px;
 }
+
+.pong-stat > i, .cs-stat > i {
+    vertical-align: top;
+    color: gold;
+}
