@@ -728,6 +728,10 @@ em{
     height: 24px;
 }
 
+.cs-icon, .pong-icon {
+    border: none;
+}
+
 .pong-stat > i, .cs-stat > i {
     vertical-align: top;
     color: gold;
