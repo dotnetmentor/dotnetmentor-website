@@ -26,10 +26,10 @@ var skillLevel = function (s) {
   return s[0] - 3 * s[1]
 }
 
-var db = PouchDB('https://dotnetmentor.cloudant.com/king-of-pong/', {
+var db = PouchDB('https://a36fd2d5-43db-44c5-b3b7-88104a291bb7-bluemix.cloudant.com/king-of-pong', {
   auth: {
-    username: 'ltionttergaveizandsomese',
-    password: '97d6d1056e61077b5e016aefa8de34e80767ede2'
+    username: 'okenceasteromeasperrityt',
+    password: 'f1eb1fc878647fa27ce2a8be8728902bd75b4409'
   }
 })
 
