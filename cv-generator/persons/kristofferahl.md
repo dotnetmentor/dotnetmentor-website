@@ -1,9 +1,9 @@
 ---
 layout: cv
-title: Kristoffer Ahl CV
+title: Kristoffer Ahl
 ---
 
-![Dotnet Mentor Logo](../img/dotnet.png)
+![Dotnet Mentor Logo](img/dotnet.png)
 
 # Kristoffer Ahl
 Kristoffer är en erfaren system- och gränssnittsutvecklare med hög kompetens och stor bredd. Han är driftig, strukturerad, ansvarsfull och mycket engagerad. Kristoffer trivs bäst i öppna och framåttänkande team och har lätt för att tillgodogöra sig ny kunskap. 
@@ -13,44 +13,44 @@ Kristoffer är engagerad i utvecklargrupper som Alt.Net och GOSA (Gothenburg Ope
 
 
 ### Kompetens 
-*Användbarhet och tillgänglighet  
-*ASP.NET 
-*ASP.NET MVC
-*Behavior Driven Development (BDD)
-*C# 
-*Cascading Style Sheets (CSS)
-*Continuous Integration 
-*CQRS och Event Sourcing
-*Cruise Control .NET 
-*Domain Driven Design 
-*Enhetstestning
-*Git 
-*Gränssnittsutveckling och design HTML
-*Integrationstesting 
-*Javascript 
-*jQuery
-*Kanban 
-*MS Test 
-*MSBuild
-*MSpec 
-*NAnt 
-*NHibernate
-*NUnit 
-*Open Source 
-*Rake
-*Raven DB 
-*Scrum 
-*Selenium 
-*Webdriver
-*SpecFlow 
-*SQLite 
-*Subversion 
-*Team City
-*Test Driven Development 
-*Team Foundation Server (TFS)
-*T-SQL 
-*SQL Server 
-*WatiN
+* Användbarhet och tillgänglighet  
+* ASP.NET 
+* ASP.NET MVC
+* Behavior Driven Development (BDD)
+* C# 
+* Cascading Style Sheets (CSS)
+* Continuous Integration 
+* CQRS och Event Sourcing
+* Cruise Control .NET 
+* Domain Driven Design 
+* Enhetstestning
+* Git 
+* Gränssnittsutveckling och design HTML
+* Integrationstesting 
+* Javascript 
+* jQuery
+* Kanban 
+* MS Test 
+* MSBuild
+* MSpec 
+* NAnt 
+* NHibernate
+* NUnit 
+* Open Source 
+* Rake
+* Raven DB 
+* Scrum 
+* Selenium 
+* Webdriver
+* SpecFlow 
+* SQLite 
+* Subversion 
+* Team City
+* Test Driven Development 
+* Team Foundation Server (TFS)
+* T-SQL 
+* SQL Server 
+* WatiN
 
 
 ### Utbildningar
@@ -144,26 +144,5 @@ SweNUG Blixten, Göteborg
 
 ### Intressen
 Soul, bordtennis och open source
-
-
-<!-- ### Footer
-
-Dotnet Mentor Väst AB | Ekelundsgatan 1, 411 18 Göteborg | 0707-493603 | mikael.egner@dotnetmentor.se -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
