@@ -1,7 +1,7 @@
 <div id="persons-container">
-  <li><a href="https://rudsberg.github.io/markdown-cv/kristofferahl">Kristoffer Ahl</a></li>
-  <li><a href="https://rudsberg.github.io/markdown-cv/person2">Person 2</a></li>
-  <li><a href="https://rudsberg.github.io/markdown-cv/person3">Person 3</a></li>
+  <li><a href="https://dotnetmentor.github.io/dotnetmentor-cv/cv-generator/kristofferahl">Kristoffer Ahl</a></li>
+  <li><a href="https://dotnetmentor.github.io/dotnetmentor-cv/cv-generator/person2">Person 2</a></li>
+  <li><a href="https://dotnetmentor.github.io/dotnetmentor-cv/cv-generator/person3">Person 3</a></li>
 </div>
 
 # Navigering
