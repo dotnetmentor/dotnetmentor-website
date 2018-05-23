@@ -1,7 +1,7 @@
 <div id="persons-container">
-  <a href="https://rudsberg.github.io/markdown-cv/kristofferahl">Kristoffer Ahl</a>
-  <a href="https://rudsberg.github.io/markdown-cv/person2">Person 2</a>
-  <a href="https://rudsberg.github.io/markdown-cv/person3">Person 3</a>
+  <li><a href="https://rudsberg.github.io/markdown-cv/kristofferahl">Kristoffer Ahl</a></li>
+  <li><a href="https://rudsberg.github.io/markdown-cv/person2">Person 2</a></li>
+  <li><a href="https://rudsberg.github.io/markdown-cv/person3">Person 3</a></li>
 </div>
 
 ---
