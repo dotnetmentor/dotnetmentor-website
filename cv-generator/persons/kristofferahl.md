@@ -3,7 +3,7 @@ layout: cv
 title: Kristoffer Ahl
 ---
 
-![Dotnet Mentor Logo](img/dotnet.png)
+![Dotnet Mentor Logo](../img/dotnet.png)
 
 # Kristoffer Ahl
 Kristoffer är en erfaren system- och gränssnittsutvecklare med hög kompetens och stor bredd. Han är driftig, strukturerad, ansvarsfull och mycket engagerad. Kristoffer trivs bäst i öppna och framåttänkande team och har lätt för att tillgodogöra sig ny kunskap. 
