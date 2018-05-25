@@ -212,6 +212,12 @@ footer {
     /*margin-bottom: 60px;*/
 }
 
+#content #navigering, #content .persons-container, #content .persons-description {
+	text-align:left;
+}
+
+
+
 @page {
     size: A4;
     margin: 11mm 17mm 17mm 17mm;
