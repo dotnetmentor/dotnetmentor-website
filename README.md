@@ -11,7 +11,7 @@ Install bundles
 
     bundle install
 
-#Run on local computer
+# Run on local computer
     bundle exec jekyll serve
 
 Go to http://localhost:4000
