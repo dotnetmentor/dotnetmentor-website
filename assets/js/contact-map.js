@@ -1,6 +1,6 @@
 'use strict';
 
-var tileUrl = 'https://api.mapbox.com/v4/mapbox.high-contrast/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : '') +'.png',
+var tileUrl = 'https://api.mapbox.com/styles/v1/mapbox/dark-v10/tiles/{z}/{x}/{y}' + (L.Browser.retina ? '@2x' : ''),
     token = 'pk.eyJ1IjoiZG90bmV0bWVudG9yIiwiYSI6ImNpc2ZxaDFxODAwMzgyc282YnBvY2R0Y3YifQ.DsdwjEhSDSgNUHLdPQf9cw',
     popupText =
         '<h3>Dotnet Mentor</h3><br>' +
@@ -21,7 +21,10 @@ popupContent.innerHTML = popupText;
 popupContent.appendChild(findHereBtn);
 
 L.tileLayer(tileUrl + '?access_token=' + token, {
-    attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    attribution: '© <a href="https://www.mapbox.com/about/maps/">Mapbox</a> © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    tileSize: 512,
+    maxZoom: 20,
+    zoomOffset: -1
 }).addTo(map);
 var marker = L.marker(loc)
     .addTo(map)
