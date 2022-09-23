@@ -1,5 +1,5 @@
-# Setup for running on yout local computer #
-Check that you have Ruby verison 2.0 or bigger 
+# Setup for running on your local computer #
+Check that you have Ruby verison 2.0 or later 
     
     ruby --version
 
