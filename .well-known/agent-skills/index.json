@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "dotnetmentor-services",
+      "type": "skill-md",
+      "description": "Consulting, mentorship, product development, and training services offered by Dotnet Mentor.",
+      "url": "https://dotnetmentor.se/.well-known/agent-skills/services/SKILL.md",
+      "digest": "sha256:70bdb2ef56b4af698b0997279fc69f94caf2d7330b9b42d1eccb6ceeb04e52f0"
+    },
+    {
+      "name": "dotnetmentor-contact",
+      "type": "skill-md",
+      "description": "Office location, general contact details, and team member information for Dotnet Mentor.",
+      "url": "https://dotnetmentor.se/.well-known/agent-skills/contact/SKILL.md",
+      "digest": "sha256:2c98388e3053a46865386911789b8fb9546d52202d122f581287fbe748d28207"
+    },
+    {
+      "name": "dotnetmentor-team",
+      "type": "skill-md",
+      "description": "Company culture, open source contributions, and consultant specialties at Dotnet Mentor.",
+      "url": "https://dotnetmentor.se/.well-known/agent-skills/team/SKILL.md",
+      "digest": "sha256:0ab5bcf08cf30521fe35f6625768a074bafb473a9b7ffb93785548785e940073"
+    }
+  ]
+}

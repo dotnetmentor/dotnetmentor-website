@@ -1,0 +1,25 @@
+# Dotnet Mentor
+
+> Swedish IT consultancy in Göteborg — consulting, mentorship, product development, and training.
+
+Dotnet Mentor offers experienced software developers for consulting, mentoring, training, and full product development. Core expertise in .NET, JavaScript, React, Node.js, Serverless, and cloud platforms.
+
+## Services
+
+- [Services](https://dotnetmentor.se/services): Consulting, mentorship, training, and product development
+- [About](https://dotnetmentor.se/about): Company culture, open source, and team background
+- [Contact](https://dotnetmentor.se/contact): Office location and team contact details
+- [Clients](https://dotnetmentor.se/clients): Customer references
+- [Careers](https://dotnetmentor.se/career): Job opportunities
+
+## Agent resources
+
+- [Agent skills index](https://dotnetmentor.se/.well-known/agent-skills/index.json): Machine-readable skill definitions
+- [Homepage (markdown)](https://dotnetmentor.se/content/index.md): Markdown version of the homepage
+- [Services (markdown)](https://dotnetmentor.se/content/services.md): Markdown version of services page
+
+## Contact
+
+- Email: info@dotnetmentor.se
+- Phone: +46 707 493 603
+- Address: Första långgatan 22, 413 28 Göteborg, Sweden

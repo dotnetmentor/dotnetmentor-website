@@ -1,0 +1,18 @@
+# Cloudflare Pages / Netlify headers for agent discovery.
+# Requires hosting on Cloudflare Pages or Netlify (not native GitHub Pages).
+
+/
+  Link: </.well-known/agent-skills/index.json>; rel="describedby", </content/index.md>; rel="alternate"; type="text/markdown", </content/services.md>; rel="service-doc"; type="text/markdown", </llms.txt>; rel="service-desc"
+  Permissions-Policy: tools=(self)
+
+/*
+  Permissions-Policy: tools=(self)
+
+/content/*
+  Content-Type: text/markdown; charset=utf-8
+
+/.well-known/agent-skills/*
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-skills/*/SKILL.md
+  Content-Type: text/markdown; charset=utf-8
