@@ -13,7 +13,7 @@
       "type": "skill-md",
       "description": "Office location, general contact details, and team member information for Dotnet Mentor.",
       "url": "https://dotnetmentor.se/.well-known/agent-skills/contact/SKILL.md",
-      "digest": "sha256:2c98388e3053a46865386911789b8fb9546d52202d122f581287fbe748d28207"
+      "digest": "sha256:38c53e81746b2b51303612afc872767cf50ef73cc41e245e84e4597ac235bbc1"
     },
     {
       "name": "dotnetmentor-team",

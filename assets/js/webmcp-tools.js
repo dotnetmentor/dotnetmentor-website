@@ -21,7 +21,7 @@
     { id: 'tim', name: 'Tim Larsson', role: 'Developer', email: 'tim.larsson@dotnetmentor.se', specialties: ['React', '.NET', 'Python'] },
     { id: 'agnes', name: 'Agnes Frost', role: 'Developer', email: 'agnes.frost@dotnetmentor.se', specialties: ['React', 'JavaScript', 'Python'] },
     { id: 'axel', name: 'Axel Rosendahl', role: 'Developer', email: 'axel.rosendahl@dotnetmentor.se', specialties: [] },
-    { id: 'oliver', name: 'Oliver Nygren', role: 'Developer', email: 'oliver.nygren@dotnetmentor.se', specialties: [] },
+    { id: 'william-lanhage', name: 'William Lanhage', role: 'Developer & Designer', email: 'william.lanhage@dotnetmentor.se', specialties: [] },
     { id: 'aymen', name: 'Aymen Toukabri', role: 'Developer', email: 'aymen.toukabri@dotnetmentor.se', specialties: [] }
   ];
 

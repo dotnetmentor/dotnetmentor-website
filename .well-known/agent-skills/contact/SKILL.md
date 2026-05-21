@@ -26,7 +26,7 @@ Located between Järntorget and Masthuggsstorget.
 | Tim Larsson | Developer | tim.larsson@dotnetmentor.se | React, .NET, Python |
 | Agnes Frost | Developer | agnes.frost@dotnetmentor.se | React, JavaScript, Python |
 | Axel Rosendahl | Developer | axel.rosendahl@dotnetmentor.se | — |
-| Oliver Nygren | Developer | oliver.nygren@dotnetmentor.se | — |
+| William Lanhage | Developer & Designer | william.lanhage@dotnetmentor.se | — |
 | Aymen Toukabri | Developer | aymen.toukabri@dotnetmentor.se | — |
 
 ## Website
