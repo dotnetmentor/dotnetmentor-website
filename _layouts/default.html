@@ -20,7 +20,17 @@
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    
+    <meta http-equiv="Permissions-Policy" content="tools=(self)">
+
+    <link rel="describedby" href="/.well-known/agent-skills/index.json">
+    {% if page.markdown_url %}
+    <link rel="alternate" type="text/markdown" href="{{ page.markdown_url }}" title="Markdown">
+    {% else %}
+    <link rel="alternate" type="text/markdown" href="/content/index.md" title="Markdown">
+    {% endif %}
+    <link rel="service-doc" type="text/markdown" href="/content/services.md">
+    <link rel="service-desc" href="/llms.txt">
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
