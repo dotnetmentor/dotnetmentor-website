@@ -1,0 +1,3 @@
+{
+  "linkHeader": "</.well-known/agent-skills/index.json>; rel=\"describedby\", </content/index.md>; rel=\"alternate\"; type=\"text/markdown\"; title=\"Markdown\", </content/services.md>; rel=\"service-doc\"; type=\"text/markdown\", </llms.txt>; rel=\"service-desc\""
+}

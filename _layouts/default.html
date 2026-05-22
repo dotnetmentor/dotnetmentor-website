@@ -15,12 +15,15 @@
     {% endif %}
 
     <meta name="author" content="dotnetmentor.se">
-    <meta name="contact" content="info@dotnetmentor.se">
-    <meta name="copyright" content="Copyright © 2016 Dotnet Mentor. Alla rättigheter reserverade.">
+    <meta name="contact" content="{{ site.data.site.email }}">
+    <meta name="copyright" content="Copyright © 2026 Dotnet Mentor. Alla rättigheter reserverade.">
 
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    
+    <meta http-equiv="Permissions-Policy" content="tools=(self)">
+
+    {% include agent/discovery-links.liquid %}
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -70,13 +73,16 @@
     <footer>
         <div class="content">
             <ul class="info-list">
-                <li><i class="material-icons">phone</i> +46 707 493 603</li>
-                <li><i class="material-icons">mail</i> <a href="mailto:info@dotnetmentor.se">info@dotnetmentor.se</a></li>
-                <li><i class="material-icons">home</i> Första långgatan 22, 413 28 Göteborg </li>
+                <li><i class="material-icons">phone</i> {{ site.data.site.phone }}</li>
+                <li><i class="material-icons">mail</i> <a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a></li>
+                <li><i class="material-icons">home</i> {{ site.data.site.address.street }}, {{ site.data.site.address.postal_code }} {{ site.data.site.address.city }} </li>
             </ul>
         </div>
     </footer>
 
+    <script type="application/json" id="dotnetmentor-agent-data">
+    {% include agent/agent-data.json.liquid %}
+    </script>
     <script>
         var mainNav = document.getElementById('nav');
         function toggleMenu(){
@@ -94,6 +100,7 @@
             var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
         })();
     </script>
+    <script type="text/javascript" src="/assets/js/webmcp-tools.js"></script>
 </body>
 
 </html>

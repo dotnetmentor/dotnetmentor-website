@@ -1,0 +1,17 @@
+{
+  "site": {{ site.data.site | jsonify }},
+  "services": {{ site.data.services.offerings | jsonify }},
+  "technologies": {{ site.data.services.technologies | jsonify }},
+  "pages": {{ site.data.services.pages | jsonify }},
+  "team": [
+    {% for member in site.data.team %}
+    {
+      "id": {{ member.id | jsonify }},
+      "name": {{ member.name | jsonify }},
+      "role": {{ member.role_en | jsonify }},
+      "email": {{ member.email | jsonify }},
+      "specialties": {{ member.specialties | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

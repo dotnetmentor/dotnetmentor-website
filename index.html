@@ -64,86 +64,17 @@ description: Konsulter, mentorer, experthjälp eller utveckling av en produkt? H
     </div>
 
     <div class="scroll-row">
-        <a class="contact" href="/contact#mikael">
-            <img
-                src="https://www.gravatar.com/avatar/89fa409841291104b3d9e10652661463.?s=220&d=identicon"
-                style="width: 97%"
-            />
+        {% for member in site.data.team %}
+        {% if member.homepage %}
+        <a class="contact" href="/contact#{{ member.id }}">
+            <img src="{{ member.avatar }}" style="width: 97%" />
             <div class="card-content">
-                <h5>Mikael</h5>
-                <p>.Net, Databases, Architecture</p>
+                <h5>{{ member.homepage_label }}</h5>
+                <p>{{ member.specialties | join: ', ' }}</p>
             </div>
         </a>
-        <a class="contact" href="/contact#fredrik">
-            <img
-                src="https://www.gravatar.com/avatar/81c363d8cfba0807e1b2b053b661d6f0.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>Fredrik</h5>
-                <p>JavaScript, .Net, Ruby, Scala, Serverless</p>
-            </div>
-        </a>
-        <a class="contact" href="/contact#agnes">
-            <img 
-                src="https://gravatar.com/avatar/795249f5ca0e2204c774d54e44d188f69b3d4a8d02f572e8091a0cb5e09e735b.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>Agnes</h5>
-                <p>React, JavaScript, Python</p>
-            </div>
-        </a>
-        <a class="contact" href="/contact#william">
-            <img
-                src="https://www.gravatar.com/avatar/1708608914989264d1a7ecb6800e2842.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>William</h5>
-                <p>React, JavaScript, Node, .Net, Serverless</p>
-            </div>
-        </a>
-        <a class="contact" href="/contact#andreas">
-            <img
-                src="https://www.gravatar.com/avatar/0271e6aa0d5d00e75e03ae4e86fe84a8.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>Andreas</h5>
-                <p>UX, React, JavaScript, .Net, Vercel</p>
-            </div>
-        </a>
-        <a class="contact" href="/contact#victor">
-            <img
-                src="https://www.gravatar.com/avatar/8b523cd3fd52f4d6c04789be8fe00c8e.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>Victor</h5>
-                <p>React, JavaScript, .Net, Serverless</p>
-            </div>
-        </a>
-        <a class="contact" href="/contact#viktor">
-            <img
-                src="https://www.gravatar.com/avatar/1497dcdc62e21cc82142efd29864e367.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>Viktor</h5>
-                <p>React, .Net, JavaScript, Python</p>
-            </div>
-        </a>
-        <a class="contact" href="/contact#tim">
-            <img
-                src="https://www.gravatar.com/avatar/61568de09bfc69e30dcc57ee4536e5a4.?s=220&amp;d=identicon"
-                style="width: 97%"
-            />
-            <div class="card-content">
-                <h5>Tim</h5>
-                <p>React, .Net, Python</p>
-            </div>
-        </a>
+        {% endif %}
+        {% endfor %}
     </div>
 
     <!-- 2022-09-21 Joakim Backede -> Tar bort tills vi bestämmt hur vi gör med nyheter -->
