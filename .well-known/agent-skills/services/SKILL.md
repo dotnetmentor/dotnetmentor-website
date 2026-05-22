@@ -38,6 +38,6 @@ End-to-end product creation, maintenance, and evolution.
 ## Contact
 
 - Email: info@dotnetmentor.se
-- Phone: +46 701 48 16 29
+- Phone: +46 707 493 603
 - Address: Första långgatan 22, 413 28 Göteborg, Sweden
 - Website: https://dotnetmentor.se/services

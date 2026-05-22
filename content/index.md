@@ -24,7 +24,7 @@ Specialists with depth and breadth across .NET, JavaScript, React, Python, Serve
 ## Contact
 
 - Email: info@dotnetmentor.se
-- Phone: +46 701 48 16 29
+- Phone: +46 707 493 603
 - Address: Första långgatan 22, 413 28 Göteborg
 
 ## Links
