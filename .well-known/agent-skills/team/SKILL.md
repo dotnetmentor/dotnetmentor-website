@@ -22,9 +22,7 @@ Our consultants combine breadth with deep specialist knowledge:
 - **William** — React, JavaScript, Node, .NET, Serverless
 - **Fredrik** — JavaScript, .NET, Ruby, Scala, Serverless
 - **Andreas** — UX, React, JavaScript, .NET, Vercel
-- **Victor** — React, JavaScript, .NET, Serverless
 - **Tim** — React, .NET, Python
-- **Agnes** — React, JavaScript, Python
 
 ## Website
 

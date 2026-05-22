@@ -12,10 +12,21 @@
   homepage: true
   homepage_label: Mikael
 
+- id: heidi
+  name: Heidi Sønnichsen
+  role: Konsultchef
+  role_en: Consulting Manager
+  email: heidi.sonnichsen@dotnetmentor.se
+  avatar: https://a.storyblok.com/f/334928/373x373/621269d31b/heidi.jpeg
+  specialties: []
+  row: 1
+  homepage: true
+  homepage_label: Heidi
+
 - id: william
   name: William Holmberg
-  role: Konsultchef och Utvecklare
-  role_en: Consulting Manager & Developer
+  role: Utvecklare
+  role_en: Developer
   email: william.holmberg@dotnetmentor.se
   phone: "+46 70 7136250"
   avatar: https://www.gravatar.com/avatar/1708608914989264d1a7ecb6800e2842.?s=220&d=identicon
@@ -33,7 +44,7 @@
   avatar: https://www.gravatar.com/avatar/81c363d8cfba0807e1b2b053b661d6f0.?s=220&d=identicon
   twitter: _fredrikh
   specialties: [JavaScript, .NET, Ruby, Scala, Serverless]
-  row: 1
+  row: 2
   homepage: true
   homepage_label: Fredrik
 
@@ -52,18 +63,6 @@
   homepage: true
   homepage_label: Andreas
 
-- id: victor
-  name: Victor Ronnerstedt
-  role: Utvecklare
-  role_en: Developer
-  email: victor.ronnerstedt@dotnetmentor.se
-  avatar: https://www.gravatar.com/avatar/8b523cd3fd52f4d6c04789be8fe00c8e.?s=220&d=identicon
-  github: Krypt0r7
-  specialties: [React, JavaScript, .NET, Serverless]
-  row: 2
-  homepage: true
-  homepage_label: Victor
-
 - id: tim
   name: Tim Larsson
   role: Utvecklare
@@ -74,18 +73,6 @@
   row: 2
   homepage: true
   homepage_label: Tim
-
-- id: agnes
-  name: Agnes Frost
-  role: Utvecklare
-  role_en: Developer
-  email: agnes.frost@dotnetmentor.se
-  avatar: https://gravatar.com/avatar/795249f5ca0e2204c774d54e44d188f69b3d4a8d02f572e8091a0cb5e09e735b.?s=220&d=identicon
-  github: agnes1234567
-  specialties: [React, JavaScript, Python]
-  row: 3
-  homepage: true
-  homepage_label: Agnes
 
 - id: axel
   name: Axel Rosendahl
