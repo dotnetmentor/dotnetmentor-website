@@ -6,5 +6,7 @@ host: 0.0.0.0
 permalink: /news/:year/:month/:day/:title
 paginate: 5
 paginate_path: "/news/page:num/"
-url: http://dotnetmentor.se
+url: https://dotnetmentor.se
+include:
+  - .well-known
 excerpt_separator: <!--more-->

@@ -3,6 +3,7 @@ layout: default
 title: Dotnet Mentor - Kontakt
 enable_leaflet: yes
 description: Konsulter, mentorer, experthjälp eller utveckling av en produkt? Hör av er så hjälper vi er. Vi sitter på Första långgatan 22, mellan Järntorget och Masthuggsstorget i Göteborg.
+markdown_url: /content/contact.md
 ---
 
 <div class="contact banner">
@@ -17,181 +18,29 @@ description: Konsulter, mentorer, experthjälp eller utveckling av en produkt? H
         <div style="width: 100%; text-align: center;">
             <h4>Besök oss</h3>
             <address>
-                Första långgatan 22 <br />
-                413 28 Göteborg <br />
+                {{ site.data.site.address.street }} <br />
+                {{ site.data.site.address.postal_code }} {{ site.data.site.address.city }} <br />
             </address>
         </div>
         <div style="width: 100%; text-align: center;">
             <h4>Kontakt</h3>
-            <a href="mailto:info@dotnetmentor.se">info@dotnetmentor.se</a><br />
-             +46 701 - 48 16 29
+            <a href="mailto:{{ site.data.site.email }}">{{ site.data.site.email }}</a><br />
+            {{ site.data.site.phone }}
         </div>
     </div>
 
-	<div class="layout-row more-space">
-		
-        <div class="box card contact" id="mikael">
-            <div class="card-image">
-                <img src="https://www.gravatar.com/avatar/89fa409841291104b3d9e10652661463.?s=220&d=identicon" />
-            </div>
-            <div class="card-content">
-                <h4>Mikael Egnér</h4>
-                <div class="title">VD</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a href="mailto:mikael.egner@dotnetmentor.se">mikael.egner@dotnetmentor.se</a></li>
-                    <li><i class="material-icons">phone</i> +46 70 7493603</li>
-                    <li><i class="icon-twitter"></i> <a href="http://twitter.com/mikaelegner">@mikaelegner</a></li>
-                    <!-- <li><img class="pong-icon" src="/assets/pingpong.png"><span class="pong-stat" data-id="mikael.egner@dotnetmentor.se"></span></li> -->
-                    <li><img class="cs-icon" src="/assets/cs.png"><span class="cs-stat" data-id="mikael.egner"></span></li>
-                </ul>
-            </div>
-        </div>
+    {% assign rows = "1,2,3,4" | split: "," %}
+    {% for row in rows %}
+    <div class="layout-row{% if row == '1' %} more-space{% endif %}">
+        {% for member in site.data.team %}
+            {% assign member_row = member.row | append: '' %}
+            {% if member_row == row %}
+                {% include team-card.liquid member=member %}
+            {% endif %}
+        {% endfor %}
+    </div>
+    {% endfor %}
 
-	   <div class="box card contact" id="william">
-            <div class="card-image">
-                <img src="https://www.gravatar.com/avatar/1708608914989264d1a7ecb6800e2842.?s=220&amp;d=identicon" style="width: 100%;" />
-            </div>
-            <div class="card-content">
-                <h4>William Holmberg</h4>
-                <div class="title">Konsultchef och Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a href="mailto:william.holmberg@dotnetmentor.se">william.holmberg@dotnetmentor.se</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/WilliamAvHolmberg">@WilliamAvHolmberg</a></li>
-                    <li><i class="material-icons">phone</i> +46 70 7136250</li>
-                    <!-- <li><img class="cs-icon" src="/assets/cs.png"><span class="cs-stat" data-id="WavH"></span></li> -->
-                </ul>
-            </div>
-        </div> 
-    
-        <div class="box card contact" id="fredrik">
-            <div class="card-image">
-                <img src="https://www.gravatar.com/avatar/81c363d8cfba0807e1b2b053b661d6f0.?s=220&d=identicon" style="width: 100%;" />
-            </div>
-            <div class="card-content">
-                <h4>Fredrik Hansson</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a href="mailto:fredrik.hansson@dotnetmentor.se">fredrik.hansson@dotnetmentor.se</a></li>
-                    <!--<li><i class="material-icons">phone</i> +46 73 6740118</li>-->
-                    <li><i class="icon-twitter"></i> <a href="https://twitter.com/_fredrikh">@_fredrikh</a></li>
-                    <!--<li><i class="icon-github-circled"></i> <a href="https://github.com/al222cv">@al222cv</a></li>-->
-                    <!-- <li><img class="pong-icon" src="/assets/pingpong.png"><span class="pong-stat" data-id="fredrik.hansson@dotnetmentor.se"></span></li> -->
-                </ul>
-            </div>
-        </div>
-		
-	</div>	
-		
-	<div class="layout-row">
-    
-        <div class="box card contact" id="andreas">
-            <div class="card-image">
-                <img src="https://www.gravatar.com/avatar/0271e6aa0d5d00e75e03ae4e86fe84a8.?s=220&d=identicon" />
-            </div>
-            <div class="card-content">
-                <h4>Andreas Larsson</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a href="mailto:andreas.larsson@dotnetmentor.se">andreas.larsson@dotnetmentor.se</a></li>
-                    <li><i class="material-icons">phone</i> +46 73 6740118</li>
-                    <li><i class="icon-twitter"></i> <a href="https://twitter.com/andreaslarsson_">@andreaslarsson_</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/al222cv">@al222cv</a></li>
-                    <!-- <li><img class="pong-icon" src="/assets/pingpong.png"><span class="pong-stat" data-id="andreas.larsson@dotnetmentor.se"></span></li> -->
-                    <li><img class="cs-icon" src="/assets/cs.png"><span class="cs-stat" data-id="larchii"></span></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="box card contact" id="victor">
-            <div class="card-image">
-                <img src="https://www.gravatar.com/avatar/8b523cd3fd52f4d6c04789be8fe00c8e.?s=220&amp;d=identicon" />
-            </div>
-            <div class="card-content">
-                <h4>Victor Ronnerstedt</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a style='font-size: 13px;' href="mailto:victor.ronnerstedt@dotnetmentor.se">victor.ronnerstedt@dotnetmentor.se</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/Krypt0r7">@Krypt0r7</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="box card contact" id="tim">
-            <div class="card-image">
-                <img src="https://www.gravatar.com/avatar/61568de09bfc69e30dcc57ee4536e5a4.?s=220&amp;d=identicon" />
-            </div>
-            <div class="card-content">
-                <h4>Tim Larsson</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a style='font-size: 13px;' href="mailto:tim.larsson@dotnetmentor.se">tim.larsson@dotnetmentor.se</a></li>
-                </ul>
-            </div>
-        </div>
-        
-	</div>
-		
-	<div class="layout-row">
-        <div class="box card contact" id="agnes">
-            <div class="card-image">
-                <img src="https://gravatar.com/avatar/795249f5ca0e2204c774d54e44d188f69b3d4a8d02f572e8091a0cb5e09e735b.?s=220&amp;d=identicon" />
-            </div>
-            <div class="card-content">
-                <h4>Agnes Frost</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a style='font-size: 13px;' href="mailto:agnes.frost@dotnetmentor.se">agnes.frost@dotnetmentor.se</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/agnes1234567">@agnes1234567</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="box card contact" id="axel">
-            <div class="card-image">
-                <img src="https://avatars.githubusercontent.com/u/180273510?v=4" />
-            </div>
-            <div class="card-content">
-                <h4>Axel Rosendahl</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a style='font-size: 13px;' href="mailto:axel.rosendahl@dotnetmentor.se">axel.rosendahl@dotnetmentor.se</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/rosendahlaxel">@rosendahlaxel</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="box card contact" id="axel">
-            <div class="card-image">
-                <img src="https://avatars.githubusercontent.com/u/71634257?v=4" />
-            </div>
-            <div class="card-content">
-                <h4>Oliver Nygren</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a style='font-size: 13px;' href="mailto:oliver.nygren@dotnetmentor.se">oliver.nygren@dotnetmentor.se</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/olivernygren">@olivernygren</a></li>
-                </ul>
-            </div>
-        </div>
-
-	</div>   
-
-    <div class="layout-row">
-        <div class="box card single contact" id="aymen">
-            <div class="card-image">
-                <img src="https://avatars.githubusercontent.com/u/55196949?v=4" />
-            </div>
-            <div class="card-content">
-                <h4>Aymen Toukabri</h4>
-                <div class="title">Utvecklare</div>
-                <ul class="info-list">
-                    <li><i class="material-icons">mail</i> <a style='font-size: 13px;' href="mailto:aymen.toukabri@dotnetmentor.se">aymen.toukabri@dotnetmentor.se</a></li>
-                    <li><i class="icon-github-circled"></i> <a href="https://github.com/davlola90">@davlola90</a></li>
-                </ul>
-            </div>
-        </div>
-	</div>   
-      
     <div id="map" class="map">
         <div class="map-error">
             <h2>:(</h2>

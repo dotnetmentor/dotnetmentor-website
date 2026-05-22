@@ -1,0 +1,24 @@
+<div class="box card contact{% if include.member.single %} single{% endif %}" id="{{ include.member.id }}">
+    <div class="card-image">
+        <img src="{{ include.member.avatar }}"{% if include.member.id == 'william' %} style="width: 100%;"{% endif %} />
+    </div>
+    <div class="card-content">
+        <h4>{{ include.member.name }}</h4>
+        <div class="title">{{ include.member.role }}</div>
+        <ul class="info-list">
+            <li><i class="material-icons">mail</i> <a{% if include.member.email.size > 24 %} style='font-size: 13px;'{% endif %} href="mailto:{{ include.member.email }}">{{ include.member.email }}</a></li>
+            {% if include.member.phone %}
+            <li><i class="material-icons">phone</i> {{ include.member.phone }}</li>
+            {% endif %}
+            {% if include.member.twitter %}
+            <li><i class="icon-twitter"></i> <a href="https://twitter.com/{{ include.member.twitter }}">@{{ include.member.twitter }}</a></li>
+            {% endif %}
+            {% if include.member.github %}
+            <li><i class="icon-github-circled"></i> <a href="https://github.com/{{ include.member.github }}">@{{ include.member.github }}</a></li>
+            {% endif %}
+            {% if include.member.cs_id %}
+            <li><img class="cs-icon" src="/assets/cs.png"><span class="cs-stat" data-id="{{ include.member.cs_id }}"></span></li>
+            {% endif %}
+        </ul>
+    </div>
+</div>

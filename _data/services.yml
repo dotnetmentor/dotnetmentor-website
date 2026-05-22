@@ -1,0 +1,49 @@
+summary: Swedish IT consultancy in Göteborg — consulting, mentorship, product development,
+  and training.
+intro: Dotnet Mentor offers experienced software developers for consulting, mentoring,
+  training, and full product development. Core expertise in .NET, JavaScript, React,
+  Node.js, Serverless, and cloud platforms.
+offerings:
+- name: Consulting
+  description: IT architecture and software development with .NET, front-end, and
+    open source expertise.
+- name: Mentorship
+  description: Targeted or long-term mentorship to strengthen existing development
+    teams.
+- name: Training
+  description: Custom training on project structure, testing, CI/CD, and team onboarding.
+- name: Product Development
+  description: End-to-end product creation, maintenance, and evolution.
+technologies:
+- .NET
+- JavaScript
+- Node.js
+- React
+- Ruby
+- Ruby on Rails
+- Python
+- AWS
+- Serverless
+- Kubernetes
+- Infrastructure as Code
+- CI/CD
+expertise_areas:
+- JavaScript and Node.js
+- Ruby and Ruby on Rails
+- AWS and Serverless/Kubernetes
+- Infrastructure as Code and CI/CD
+- Front end and mobile web
+- Open source
+pages:
+- path: /
+  title: Home
+- path: /services
+  title: Services
+- path: /about
+  title: About
+- path: /contact
+  title: Contact
+- path: /clients
+  title: Clients
+- path: /career
+  title: Careers

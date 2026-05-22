@@ -1,0 +1,12 @@
+name: Dotnet Mentor
+email: info@dotnetmentor.se
+phone: "+46 701 48 16 29"
+address:
+  street: Första långgatan 22
+  postal_code: "413 28"
+  city: Göteborg
+  country: Sweden
+website: https://dotnetmentor.se
+tagline: Konsulter, mentorer, experthjälp eller utveckling av en produkt? Hör av er så hjälper vi er.
+location_note: Vi sitter på Första långgatan 22, mellan Järntorget och Masthuggsstorget i Göteborg.
+map_coordinates: "57.6986, 11.9522"

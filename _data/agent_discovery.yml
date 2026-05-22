@@ -1,0 +1,23 @@
+skills:
+  - name: dotnetmentor-services
+    description: Consulting, mentorship, product development, and training services offered by Dotnet Mentor.
+    path: /services/SKILL.md
+  - name: dotnetmentor-contact
+    description: Office location, general contact details, and team member information for Dotnet Mentor.
+    path: /contact/SKILL.md
+  - name: dotnetmentor-team
+    description: Company culture, open source contributions, and consultant specialties at Dotnet Mentor.
+    path: /team/SKILL.md
+
+html_links:
+  - rel: describedby
+    href: /.well-known/agent-skills/index.json
+  - rel: alternate
+    href: /content/index.md
+    type: text/markdown
+    title: Markdown
+  - rel: service-doc
+    href: /content/services.md
+    type: text/markdown
+  - rel: service-desc
+    href: /llms.txt

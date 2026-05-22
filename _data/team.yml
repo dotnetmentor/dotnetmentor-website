@@ -1,0 +1,119 @@
+- id: mikael
+  name: Mikael Egnér
+  role: VD
+  role_en: CEO
+  email: mikael.egner@dotnetmentor.se
+  phone: "+46 70 7493603"
+  avatar: https://www.gravatar.com/avatar/89fa409841291104b3d9e10652661463.?s=220&d=identicon
+  twitter: mikaelegner
+  cs_id: mikael.egner
+  specialties: [.NET, Databases, Architecture]
+  row: 1
+  homepage: true
+  homepage_label: Mikael
+
+- id: william
+  name: William Holmberg
+  role: Konsultchef och Utvecklare
+  role_en: Consulting Manager & Developer
+  email: william.holmberg@dotnetmentor.se
+  phone: "+46 70 7136250"
+  avatar: https://www.gravatar.com/avatar/1708608914989264d1a7ecb6800e2842.?s=220&d=identicon
+  github: WilliamAvHolmberg
+  specialties: [React, JavaScript, Node, .NET, Serverless]
+  row: 1
+  homepage: true
+  homepage_label: William
+
+- id: fredrik
+  name: Fredrik Hansson
+  role: Utvecklare
+  role_en: Developer
+  email: fredrik.hansson@dotnetmentor.se
+  avatar: https://www.gravatar.com/avatar/81c363d8cfba0807e1b2b053b661d6f0.?s=220&d=identicon
+  twitter: _fredrikh
+  specialties: [JavaScript, .NET, Ruby, Scala, Serverless]
+  row: 1
+  homepage: true
+  homepage_label: Fredrik
+
+- id: andreas
+  name: Andreas Larsson
+  role: Utvecklare
+  role_en: Developer
+  email: andreas.larsson@dotnetmentor.se
+  phone: "+46 73 6740118"
+  avatar: https://www.gravatar.com/avatar/0271e6aa0d5d00e75e03ae4e86fe84a8.?s=220&d=identicon
+  twitter: andreaslarsson_
+  github: al222cv
+  cs_id: larchii
+  specialties: [UX, React, JavaScript, .NET, Vercel]
+  row: 2
+  homepage: true
+  homepage_label: Andreas
+
+- id: victor
+  name: Victor Ronnerstedt
+  role: Utvecklare
+  role_en: Developer
+  email: victor.ronnerstedt@dotnetmentor.se
+  avatar: https://www.gravatar.com/avatar/8b523cd3fd52f4d6c04789be8fe00c8e.?s=220&d=identicon
+  github: Krypt0r7
+  specialties: [React, JavaScript, .NET, Serverless]
+  row: 2
+  homepage: true
+  homepage_label: Victor
+
+- id: tim
+  name: Tim Larsson
+  role: Utvecklare
+  role_en: Developer
+  email: tim.larsson@dotnetmentor.se
+  avatar: https://www.gravatar.com/avatar/61568de09bfc69e30dcc57ee4536e5a4.?s=220&d=identicon
+  specialties: [React, .NET, Python]
+  row: 2
+  homepage: true
+  homepage_label: Tim
+
+- id: agnes
+  name: Agnes Frost
+  role: Utvecklare
+  role_en: Developer
+  email: agnes.frost@dotnetmentor.se
+  avatar: https://gravatar.com/avatar/795249f5ca0e2204c774d54e44d188f69b3d4a8d02f572e8091a0cb5e09e735b.?s=220&d=identicon
+  github: agnes1234567
+  specialties: [React, JavaScript, Python]
+  row: 3
+  homepage: true
+  homepage_label: Agnes
+
+- id: axel
+  name: Axel Rosendahl
+  role: Utvecklare
+  role_en: Developer
+  email: axel.rosendahl@dotnetmentor.se
+  avatar: https://avatars.githubusercontent.com/u/180273510?v=4
+  github: rosendahlaxel
+  specialties: []
+  row: 3
+
+- id: william-lanhage
+  name: William Lanhage
+  role: Utvecklare & Designer
+  role_en: Developer & Designer
+  email: william.lanhage@dotnetmentor.se
+  avatar: https://avatars.githubusercontent.com/u/144318002?v=4
+  github: wlanhage
+  specialties: []
+  row: 3
+
+- id: aymen
+  name: Aymen Toukabri
+  role: Utvecklare
+  role_en: Developer
+  email: aymen.toukabri@dotnetmentor.se
+  avatar: https://avatars.githubusercontent.com/u/55196949?v=4
+  github: davlola90
+  specialties: []
+  row: 4
+  single: true

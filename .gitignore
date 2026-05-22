@@ -3,3 +3,4 @@ Gemfile.lock
 npm-debug.log
 node_modules
 .DS_Store
+ruby-install-0.9.4/
